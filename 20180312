@@ -1,0 +1,20 @@
+import random
+secret = random.randint(1,10)
+times = 3
+print('------Welcome------')
+print('guess what am i thinking about=',end='')
+while (times != 0):
+    temp = input()
+    guess = int(temp)
+    times = times -1
+    if guess == secret:
+        print('you\'re right')
+        print('WOW!How clever you\'re!over')
+        break
+    else:
+        if guess > secret:
+            print('bigger!')
+        elif guess < secret:
+            print('smaller')
+        print('try again！=',end='')
+print('time is over')
